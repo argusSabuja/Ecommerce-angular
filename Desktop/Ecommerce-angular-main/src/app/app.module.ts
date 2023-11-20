@@ -10,7 +10,8 @@ import { ProductSliderComponent } from './home/product-slider/product-slider.com
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NavContentComponent } from './navbar/nav-content/nav-content.component';
-
+import { MatIconModule } from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,10 @@ import { NavContentComponent } from './navbar/nav-content/nav-content.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatButtonModule
+    // MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

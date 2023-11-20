@@ -1,28 +1,44 @@
-<div class="fixed top-0 z-50 right-0 left-0 bg-[#69f0ae] text-gray-800 flex ">
+<div
+  class="fixed top-0 z-50 right-0 left-0 bg-[#69f0ae] text-gray-800 px-5 lg:px-20"
+>
+  <div class="h-16 flex items-center justify-between">
+    <div class="flex items-center">
+      <div class="mr-5">
+        <img class="w-8" src="../../assets/Logo.jpg" alt="Argus-e-Shop" />
+      </div>
 
-    <div class="h-16 flex items-center justify-between">
-
-        <div>
-            <img class="w-8" src="../../assets/Logo.jpg" alt="Argus-e-Shop">
+      <div class="">
+        <div class="flex space-x-4">
+          <a routerLink="/" class="text-gray-800"> Shop with Argusoft </a>
+          <div>
+            <button class="" (click)="openNavbarContent('men')" mat-button>
+              Men
+            </button>
+          </div>
+          <div>
+            <button class="" (click)="openNavbarContent('women')" mat-button>
+              Women
+            </button>
+          </div>
         </div>
-
-
-        <div class="">
-            <div class="flex space-x-4">
-                <a routerLink="/" class="text-gray-800">
-                    Shop with Argusoft
-                </a>
-                <div>
-                    <button class="" (click)="openNavbarContent('men')" mat-button>Men</button>
-                </div>
-                <div>
-                    <button class="" (click)="openNavbarContent('women')" mat-button>Women</button>
-                </div>
-
-            </div>
-
-        </div>
-
-        
+      </div>
     </div>
+
+    <div class="flex items-center">
+      <button (click)="navigateTo('cart')" mat-icon-button>
+        <mat-icon>shopping_cart</mat-icon>
+      </button>
+
+      <button mat-raised-button color="accent">LOGIN</button>
+      <div class="ml-3 flex items-center">
+        <div class="flex items-center space-x-5">
+
+          <span class="font-bold text-lg">Sabuja</span>
+          <button>
+            <img src="" alt="">
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
