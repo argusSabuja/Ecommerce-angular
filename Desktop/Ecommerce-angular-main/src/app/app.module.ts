@@ -12,6 +12,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { NavContentComponent } from './navbar/nav-content/nav-content.component';
 import { MatIconModule } from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import {MatMenuModule} from '@angular/material/menu';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +28,8 @@ import {MatButtonModule} from '@angular/material/button';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatMenuModule
     // MatIconModule,
   ],
   providers: [],
